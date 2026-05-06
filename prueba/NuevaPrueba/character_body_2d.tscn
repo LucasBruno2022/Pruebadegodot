@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bs2uys33w7etd"]
+
+[ext_resource type="Texture2D" uid="uid://bj32y2o07t3c2" path="res://icon.svg" id="1_4i3bs"]
+[ext_resource type="Script" uid="uid://n55iq684vke8" path="res://NuevaPrueba/Npc.gd" id="1_ytukl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4i3bs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytukl"]
+
+[node name="Npc" type="CharacterBody2D" unique_id=1747160835]
+script = ExtResource("1_ytukl")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1547206417]
+texture = ExtResource("1_4i3bs")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=129266798]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=978965690]
+scale = Vector2(11.298299, 11.763794)
+shape = SubResource("CircleShape2D_4i3bs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1455766364]
+scale = Vector2(6.400285, 6.399141)
+shape = SubResource("RectangleShape2D_ytukl")
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

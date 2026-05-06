@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dq8lchmdjer80"]
+
+[ext_resource type="PackedScene" uid="uid://c0cl533ktpqsa" path="res://escenapersonaje/character_body_2d.tscn" id="1_b1c07"]
+[ext_resource type="PackedScene" uid="uid://cfpdsa32aww81" path="res://NuevaPrueba/Jugador.tscn" id="2_l1y6x"]
+
+[node name="Main" type="Node2D" unique_id=142271835]
+
+[node name="Personaje" parent="." unique_id=1525811451 instance=ExtResource("1_b1c07")]
+position = Vector2(531, 144)
+scale = Vector2(0.2992839, 0.32318532)
+
+[node name="Jugador" parent="." unique_id=20184129 instance=ExtResource("2_l1y6x")]
+position = Vector2(549, 446)
+scale = Vector2(0.29942605, 0.27029592)

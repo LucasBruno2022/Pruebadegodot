@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dj0j3e65ltdsh"]
+
+[ext_resource type="Script" uid="uid://b0m23ro668021" path="res://Practicas de señanles/Hijo2d.gd" id="1_jdpdk"]
+
+[node name="Hijo" type="Node2D" unique_id=1165635553]
+script = ExtResource("1_jdpdk")

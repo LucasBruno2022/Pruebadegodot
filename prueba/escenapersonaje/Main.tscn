@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://0m3ab6trdy3"]
+
+[ext_resource type="PackedScene" uid="uid://c0cl533ktpqsa" path="res://escenapersonaje/character_body_2d.tscn" id="1_3juel"]
+[ext_resource type="Script" uid="uid://dxj12wri1i6by" path="res://escenapersonaje/main.gd" id="1_jwljw"]
+[ext_resource type="PackedScene" uid="uid://cfpdsa32aww81" path="res://NuevaPrueba/Jugador.tscn" id="3_m7po2"]
+
+[node name="Node2D" type="Node2D" unique_id=1703396630]
+script = ExtResource("1_jwljw")
+
+[node name="Personaje" parent="." unique_id=1525811451 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(723, 230)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")
+
+[node name="Jugador" parent="." unique_id=20184129 instance=ExtResource("3_m7po2")]
+scale = Vector2(0.30586705, 0.32537737)
+
+[node name="Personaje2" parent="." unique_id=1977699712 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(420.00006, 153)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")
+
+[node name="Personaje3" parent="." unique_id=100992763 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(1007.00006, 112)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")
+
+[node name="Personaje4" parent="." unique_id=1839097747 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(963.00006, 479)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")
+
+[node name="Personaje5" parent="." unique_id=1975433733 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(261.00006, 456)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")
+
+[node name="Personaje6" parent="." unique_id=952197548 node_paths=PackedStringArray("Recibido", "Player") instance=ExtResource("1_3juel")]
+position = Vector2(208.00006, 286)
+scale = Vector2(0.30700678, 0.28095555)
+Recibido = NodePath("..")
+Player = NodePath("../Jugador")

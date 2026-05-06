@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://to40anwa2p5r"]
+
+[ext_resource type="PackedScene" uid="uid://cfpdsa32aww81" path="res://NuevaPrueba/Jugador.tscn" id="1_n5i5r"]
+[ext_resource type="PackedScene" uid="uid://dtpvdivml18x" path="res://areas/bicho.tscn" id="2_k7oad"]
+
+[node name="Main" type="Node2D" unique_id=353753081]
+
+[node name="Jugador" parent="." unique_id=20184129 instance=ExtResource("1_n5i5r")]
+position = Vector2(483, 390)
+scale = Vector2(0.5013615, 0.56586766)
+
+[node name="Bicho" parent="." unique_id=1034999467 node_paths=PackedStringArray("UnJugador") instance=ExtResource("2_k7oad")]
+position = Vector2(773.0001, 180)
+UnJugador = NodePath("../Jugador")

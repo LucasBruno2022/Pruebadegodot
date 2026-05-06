@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dqiysiotvu280"]
+
+[ext_resource type="Script" uid="uid://c454cl2x0aiim" path="res://Practicas de señanles/node_2d.gd" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://dj0j3e65ltdsh" path="res://Practicas de señanles/hijo.tscn" id="2_0e48y"]
+
+[node name="Node2D" type="Node2D" unique_id=1218531782]
+script = ExtResource("1_wtcfe")
+
+[node name="Hijo" parent="." unique_id=1165635553 instance=ExtResource("2_0e48y")]
